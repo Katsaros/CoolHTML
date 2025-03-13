@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultra-Minimal CoolHTML</title>
+    <script src="CoolHTML.js"></script>
+</head>
+<body>
+    <script>
+        // One-line site creation with global factory function
+        cool().site({
+            // Theme colors
+            theme: {
+                primary: '#4361ee',
+                secondary: '#3f37c9'
+            },
+            
+            // Navigation - minimal keywords
+            nav: {
+                title: 'CoolHTML',
+                logo: '/api/placeholder/100/30',
+                dark: true,
+                links: ['Home', 'Features', 'Pricing', 'Contact'],
+                btn: { text: 'Get Started', outline: true, type: 'light' }
+            },
+            
+            // Hero section with minimal syntax
+            hero: {
+                t: 'Build Sites with *Minimal Code*',  // Short alias for title
+                st: 'No HTML required',                // Short alias for subtitle
+                dark: true,
+                bg: 'linear-gradient(135deg, #4361ee 0%, #3f37c9 100%)',
+                btns: [                                // Short alias for buttons
+                    { text: 'Get Started', type: 'light', size: 'lg' },
+                    { text: 'Learn More', type: 'light', outline: true }
+                ]
+            },
+            
+            // Features with icon shortcuts
+            features: {
+                t: 'Key Features',
+                items: [
+                    {
+                        icon: 'bi-code-slash',
+                        t: 'Minimal Syntax',
+                        text: 'Create websites with the fewest possible lines of code'
+                    },
+                    {
+                        icon: 'bi-columns-gap',
+                        t: 'Smart Defaults',
+                        text: 'Intuitive defaults mean less configuration'
+                    },
+                    {
+                        icon: 'bi-lightning',
+                        t: 'Common Keywords',
+                        text: 'Use familiar terms instead of framework-specific jargon'
+                    }
+                ]
+            },
+            
+            // Content section
+            sections: {
+                t: 'How It Works',
+                text: "This framework uses *common keywords* and _minimal syntax_ to create beautiful websites.\n\nNo HTML knowledge required. Just define what you want and the framework does the rest.",
+                bg: '#f8f9fa',
+                align: 'center'
+            },
+            
+            // Pricing section
+            pricing: {
+                t: 'Pricing',
+                plans: [
+                    {
+                        title: 'Free',
+                        price: '$0',
+                        period: '/mo',
+                        features: ['1 Project', '1 GB Storage', { text: 'Support', included: false }],
+                        btn: 'Start Free'
+                    },
+                    {
+                        title: 'Pro',
+                        price: '$29',
+                        period: '/mo',
+                        featured: true,
+                        features: ['Unlimited Projects', '10 GB Storage', 'Support'],
+                        btn: 'Get Started'
+                    },
+                    {
+                        title: 'Team',
+                        price: '$99',
+                        period: '/mo',
+                        features: ['Unlimited Projects', '100 GB Storage', 'Priority Support'],
+                        btn: 'Contact Us'
+                    }
+                ]
+            },
+            
+            // Testimonials section
+            testimonials: {
+                t: 'What People Say',
+                type: 'carousel',
+                items: [
+                    {
+                        quote: "I built my business website in under 10 minutes without writing a single line of HTML.",
+                        name: "Sarah Johnson",
+                        title: "Entrepreneur",
+                        image: "/api/placeholder/80/80"
+                    },
+                    {
+                        quote: "The simplified syntax makes web development accessible even to non-developers.",
+                        name: "Michael Chen",
+                        title: "Designer",
+                        image: "/api/placeholder/80/80"
+                    }
+                ]
+            },
+            
+            // Contact section
+            contact: {
+                t: 'Get In Touch',
+                info: {
+                    email: 'hello@coolhtml.com',
+                    phone: '+1 (555) 123-4567',
+                    address: '123 Web Street, Developer City, 10100'
+                },
+                text: "Have questions about CoolHTML? Need help with your project? Let us know!",
+                btn: 'Send Message'
+            },
+            
+            // Footer
+            footer: {
+                dark: true,
+                title: 'CoolHTML',
+                text: 'The ultra-minimal website builder',
+                copyright: '© 2025 CoolHTML',
+                links: [
+                    { text: 'Home', url: '#' },
+                    { text: 'Features', url: '#' },
+                    { text: 'Pricing', url: '#' },
+                    { text: 'Contact', url: '#' }
+                ],
+                social: [
+                    { icon: 'twitter', url: '#' },
+                    { icon: 'github', url: '#' },
+                    { icon: 'linkedin', url: '#' }
+                ],
+                form: {
+                    title: 'Newsletter',
+                    text: 'Stay updated with our latest features',
+                    btn: 'Subscribe'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
